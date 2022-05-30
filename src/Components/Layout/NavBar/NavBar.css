@@ -1,0 +1,39 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.594);
+  color: white;
+  padding: 0px 85px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 240px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.navbar-sections > li {
+  cursor: pointer;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.trailer-container {
+    /* border: 2px solid green; */
+    width: 75vw;
+    position: relative;
+    top: 95vh;
+}
+
+.yt-video {
+    width: 100%;
+    color: white;
+    margin: 5% 0;
+    /* border: 1px solid red; */
+    font-weight: bold;
+}
+
+.responsive-iframe {
+    width: 100%;
+    min-height: 80vh;
+    left: 0;
+    right: 0;
+    /* margin: 50px; */
+    position: relative;
+    /* border: 2px solid rgb(3, 139, 57); */
+}

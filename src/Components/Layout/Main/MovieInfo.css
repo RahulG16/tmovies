@@ -1,0 +1,33 @@
+.movieinfo {
+  z-index: 8;
+  color: white;
+  /* border: 2px solid yellow; */
+  width: 70%;
+  height: 75vh;
+  position: absolute;
+  top: 20%;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.badge-container {
+  padding: 18px 0px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.movieinfo-content {
+  /* border: 1px solid yellowgreen; */
+  width: 70%;
+  height: 100%;
+  text-align: justify;
+}
+
+.movieinfo-content > * {
+  margin: 0px;
+}
