@@ -8,8 +8,7 @@ import MoviesList from "../../Components/Layout/Main/MoviesList";
 
 const axios = require("axios");
 
-function InfoPage({ id, type, props }) {
-  console.log(id);
+function InfoPage({ id, type}) {
 
   let [movie, setMovie] = useState([]);
   let [similarMovies, setSimilarMovies] = useState([]);

@@ -24,8 +24,6 @@ function TvSeries() {
     }
   }
 
-  console.log(tvArr);
-
   return (
     <div>
       <NavBar />
