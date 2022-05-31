@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tmovies/static/css/main.4a519361.css",
-    "main.js": "/tmovies/static/js/main.1058fd8d.js",
+    "main.js": "/tmovies/static/js/main.d464953c.js",
     "static/media/high-resolution-black-background-09.jpg": "/tmovies/static/media/high-resolution-black-background-09.dc0ac51af21dd4d38688.jpg",
     "static/media/placeholder.png": "/tmovies/static/media/placeholder.4d1dba3d8f0a3d9f693e.png",
     "index.html": "/tmovies/index.html",
     "main.4a519361.css.map": "/tmovies/static/css/main.4a519361.css.map",
-    "main.1058fd8d.js.map": "/tmovies/static/js/main.1058fd8d.js.map"
+    "main.d464953c.js.map": "/tmovies/static/js/main.d464953c.js.map"
   },
   "entrypoints": [
     "static/css/main.4a519361.css",
-    "static/js/main.1058fd8d.js"
+    "static/js/main.d464953c.js"
   ]
 }
