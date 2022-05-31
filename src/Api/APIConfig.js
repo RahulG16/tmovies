@@ -23,6 +23,10 @@ const apiConfig = {
     `https://api.themoviedb.org/3/search/movie?api_key=c79a086262eb5908b8dc881666c15e82&language=en-US&query=${keyword}&page=1&include_adult=false`,
   searchTV: (keyword) =>
     `https://api.themoviedb.org/3/search/tv?api_key=c79a086262eb5908b8dc881666c15e82&language=en-US&page=1&query=${keyword}&include_adult=false`,
+  popularMovies:
+    "https://api.themoviedb.org/3/movie/popular?api_key=c79a086262eb5908b8dc881666c15e82&language=en-US&page=1&append_to_response=videos",
+  upComingMovies:
+    "https://api.themoviedb.org/3/movie/upcoming?api_key=c79a086262eb5908b8dc881666c15e82&language=en-US&page=1",
 };
 
 export default apiConfig;

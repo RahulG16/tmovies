@@ -9,17 +9,20 @@ const axios = require("axios");
 
 function Home() {
   let [trendingMovies, setTrendingMovies] = useState([]);
+  let [upComing, setUpComing] = useState([]);
   let [topRatedMovies, setTopRatedMovies] = useState([]);
   let [popularTv, setpopularTv] = useState([]);
   let [topTv, setTopTv] = useState([]);
 
   async function getMovies() {
     try {
-      const trendingMoviesRes = await axios.get(
-        `${apiConfig.baseUrl}trending/all/day?api_key=${apiConfig.apiKey}&append_to_response=videos`
-      );
+      const trendingMoviesRes = await axios.get(`${apiConfig.popularMovies}`);
 
       setTrendingMovies(trendingMoviesRes.data.results);
+
+      const upComingRes = await axios.get(`${apiConfig.upComingMovies}`);
+
+      setUpComing(upComingRes.data.results);
 
       const topRatedMoviesRes = await axios.get(apiConfig.topRatedMovies);
 
@@ -39,16 +42,25 @@ function Home() {
 
   useEffect(() => {
     getMovies();
-  }, [])
+  }, []);
 
   return (
     <div>
       <NavBar />
       <Banner />
-      <MoviesList contentArr={trendingMovies} title={"Trending Movies"} />
+      <MoviesList
+        contentArr={trendingMovies}
+        title={"Popular Movies"}
+        contentType={"movie"}
+      />
       <MoviesList
         contentArr={topRatedMovies}
         title={"Top Rated Movies"}
+        contentType={"movie"}
+      />
+      <MoviesList
+        contentArr={upComing}
+        title={"Upcoming Movies In Theatres"}
         contentType={"movie"}
       />
       <MoviesList
