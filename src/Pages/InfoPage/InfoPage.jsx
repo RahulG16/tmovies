@@ -8,13 +8,30 @@ import MoviesList from "../../Components/Layout/Main/MoviesList";
 
 const axios = require("axios");
 
-function InfoPage({ id, type }) {
+function InfoPage({ id, type, props }) {
+  console.log(id);
+
   let [movie, setMovie] = useState([]);
   let [similarMovies, setSimilarMovies] = useState([]);
 
   useEffect(() => {
-    getFilmInfo(id, type);
-    getSimilarMovies(id, type);
+    if (id || type !== undefined) {
+      localStorage.setItem(
+        "content-info",
+        JSON.stringify({ id: id, type: type })
+      );
+
+      getFilmInfo(id, type);
+      getSimilarMovies(id, type);
+    } else {
+      let filmInfo = JSON.parse(localStorage.getItem("content-info"));
+
+      let id = filmInfo.id;
+      let type = filmInfo.type;
+
+      getFilmInfo(id, type);
+      getSimilarMovies(id, type);
+    }
   }, [id, type]);
 
   async function getFilmInfo(id, type) {
@@ -62,7 +79,11 @@ function InfoPage({ id, type }) {
       </div>
       <MovieInfo movie={movie} />
       {movie.videos !== undefined ? <TrailerSection trailersArr={movie} /> : ""}
-      <MoviesList contentArr={similarMovies} title={'Similar Movies'} contentType={type}/>
+      <MoviesList
+        contentArr={similarMovies}
+        title={"Similar Movies"}
+        contentType={type}
+      />
     </div>
   );
 }

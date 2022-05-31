@@ -3,8 +3,8 @@ import { createContext, useState } from "react";
 export const FilmContext = createContext();
 
 export function FilmInfoProvider(props) {
-  let [ID, setID] = useState(23);
-  let [type, setType] = useState("movie");
+  let [ID, setID] = useState(undefined);
+  let [type, setType] = useState(undefined);
 
   let filmInfo = {
     id: ID,

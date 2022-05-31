@@ -28,7 +28,7 @@ function App() {
           element={<InfoPage id={filmCtx.id} type={filmCtx.type} />}
         />
         <Route path="/movies" exact element={<Movies />} />
-        <Route path="/tv-series" exact element={<TvSeries/>}/>
+        <Route path="/tv-series" exact element={<TvSeries />} />
       </Routes>
     </div>
   );

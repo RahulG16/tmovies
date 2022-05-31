@@ -7,9 +7,9 @@ function TrailerSection({ trailersArr }) {
   return (
     <div className="trailer-container">
       {trailers !== undefined
-        ? trailers.map((trailer) => {
+        ? trailers.map((trailer, i) => {
             return (
-              <div className="yt-video">
+              <div className="yt-video" key={i}>
                 <h2>{trailer.name}</h2>
                 <iframe
                   className="responsive-iframe"

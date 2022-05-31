@@ -10,9 +10,9 @@ function Cast({ cast }) {
     <div className="cast-block">
       <h2>Casts</h2>
       <div className="profiles-container">
-        {cast.map((person) => {
+        {cast.map((person, i) => {
           return (
-            <div className="profile">
+            <div className="profile" key={i}>
               <img
                 src={`${apiConfig.originalImage(person.profile_path)}`}
                 alt=""

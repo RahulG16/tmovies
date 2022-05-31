@@ -25,8 +25,9 @@ function MoviesList({ contentArr, title, contentType }) {
             <Link
               to={`/${content.media_type || contentType}/${content.id}`}
               className={"content-link"}
+              key={i}
             >
-              <div className="content" key={i}>
+              <div className="content">
                 <img
                   src={apiConfig.originalImage(content.poster_path)}
                   alt=""
