@@ -2,7 +2,9 @@
     /* border: 2px solid green; */
     width: 75vw;
     position: relative;
+    height: auto;
     top: 95vh;
+    margin-bottom: 600px;
 }
 
 .yt-video {

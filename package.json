@@ -1,6 +1,6 @@
 {
   "name": "tmovies",
-  "homepage": "https://rahulg16.github.io/tmovies/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

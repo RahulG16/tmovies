@@ -1,0 +1,29 @@
+.card {
+    /* border: 1px solid red; */
+    max-width: 20vw;
+    min-width: 14vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.card-link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-name {
+    font-size: 18px;
+    margin: 4px 0px;
+    font-weight: bold;
+}
+
+.card-img {
+    min-width: 12vw;
+    max-width: 18vw;
+    border-radius: 15px;
+}

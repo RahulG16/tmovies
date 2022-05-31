@@ -4,8 +4,6 @@ import './TrailerSection.css'
 function TrailerSection({ trailersArr }) {
   let trailers = trailersArr.videos.results;
 
-  console.log(trailers);
-
   return (
     <div className="trailer-container">
       {trailers !== undefined
@@ -18,8 +16,7 @@ function TrailerSection({ trailersArr }) {
                   src={`https://www.youtube.com/embed/${trailer.key}`}
                   title="YouTube video player"
                   frameborder="0"
-                  allow="encrypted-media; picture-in-picture"
-                  allowfullscreen
+                  allow="picture-in-picture"
                 ></iframe>
               </div>
             );

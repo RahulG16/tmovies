@@ -10,7 +10,7 @@ function MovieInfo({ movie }) {
     <div className="movieinfo">
       <SimpleCard posterImg={movie.poster_path} />
       <div className="movieinfo-content">
-        <h1>{movie.original_title || movie.original_name}</h1>
+        <h1>{movie.original_name || movie.original_title}</h1>
 
         {movie.genres !== undefined ? (
           <div className="badge-container">
@@ -22,7 +22,11 @@ function MovieInfo({ movie }) {
           ""
         )}
 
-        <p>{movie.overview}</p>
+        <p>
+          {movie.overview !== undefined ? (movie.overview.length > 530
+            ? movie.overview.slice(0, 530) + "..."
+            : movie.overview) : ''}
+        </p>
         {movie.credits !== undefined ? <Cast cast={movie.credits.cast} /> : ""}
       </div>
     </div>

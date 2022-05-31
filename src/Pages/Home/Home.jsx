@@ -45,7 +45,22 @@ function Home() {
     <div>
       <NavBar />
       <Banner />
-      <MoviesList content={trendingMovies}/>
+      <MoviesList contentArr={trendingMovies} title={"Trending Movies"} />
+      <MoviesList
+        contentArr={topRatedMovies}
+        title={"Top Rated Movies"}
+        contentType={"movie"}
+      />
+      <MoviesList
+        contentArr={popularTv}
+        title={"Popular TV Series"}
+        contentType={"tv"}
+      />
+      <MoviesList
+        contentArr={topTv}
+        title={"Top TV Series"}
+        contentType={"tv"}
+      />
     </div>
   );
 }
