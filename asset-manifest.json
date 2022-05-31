@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.4a519361.css",
-    "main.js": "./static/js/main.b948ded6.js",
-    "static/media/high-resolution-black-background-09.jpg": "./static/media/high-resolution-black-background-09.dc0ac51af21dd4d38688.jpg",
-    "static/media/placeholder.png": "./static/media/placeholder.4d1dba3d8f0a3d9f693e.png",
-    "index.html": "./index.html",
-    "main.4a519361.css.map": "./static/css/main.4a519361.css.map",
-    "main.b948ded6.js.map": "./static/js/main.b948ded6.js.map"
+    "main.css": "/tmovies/static/css/main.4a519361.css",
+    "main.js": "/tmovies/static/js/main.ac78776f.js",
+    "static/media/high-resolution-black-background-09.jpg": "/tmovies/static/media/high-resolution-black-background-09.dc0ac51af21dd4d38688.jpg",
+    "static/media/placeholder.png": "/tmovies/static/media/placeholder.4d1dba3d8f0a3d9f693e.png",
+    "index.html": "/tmovies/index.html",
+    "main.4a519361.css.map": "/tmovies/static/css/main.4a519361.css.map",
+    "main.ac78776f.js.map": "/tmovies/static/js/main.ac78776f.js.map"
   },
   "entrypoints": [
     "static/css/main.4a519361.css",
-    "static/js/main.b948ded6.js"
+    "static/js/main.ac78776f.js"
   ]
 }
