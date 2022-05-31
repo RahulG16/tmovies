@@ -9,7 +9,6 @@ function Card({ movieInfo, type }) {
   let filmCtx = useContext(FilmContext);
 
   function clickHandler(e) {
-    console.log(e.target.dataset.id);
     let id = e.target.dataset.id;
 
     filmCtx.setID(id);

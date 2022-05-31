@@ -16,7 +16,7 @@ function TrailerSection({ trailersArr }) {
                   src={`https://www.youtube.com/embed/${trailer.key}`}
                   title="YouTube video player"
                   frameborder="0"
-                  allow="picture-in-picture"
+                  allowFullScreen
                 ></iframe>
               </div>
             );
