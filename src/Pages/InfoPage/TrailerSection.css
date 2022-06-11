@@ -22,26 +22,26 @@
   position: relative;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .trailer-container {
-    margin-top: 40vh;
+    margin-top: 30vh;
   }
 }
 
 @media screen and (max-width: 602px) {
   .trailer-container {
-    margin-top: 80vh;
+    margin-top: 45vh;
   }
 }
 
 @media screen and (max-width: 520px) {
   .trailer-container {
-    margin-top: 60vh;
+    margin-top: 40vh;
   }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 461px) {
   .trailer-container {
-    margin-top: 30vh;
+    margin-top: 90vh;
   }
 }

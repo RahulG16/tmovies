@@ -1,11 +1,13 @@
 .profile > img {
     width: 80px;
+    height: 120px;
     border-radius: 8px;
 }
 
 .profile > p {
     font-size: 12px;
     margin: 0px;
+    margin-top: 6px;
 }
 
 .profile {

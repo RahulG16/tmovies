@@ -8,8 +8,7 @@ import MoviesList from "../../Components/Layout/Main/MoviesList";
 
 const axios = require("axios");
 
-function InfoPage({ id, type}) {
-
+function InfoPage({ id, type }) {
   let [movie, setMovie] = useState([]);
   let [similarMovies, setSimilarMovies] = useState([]);
 
@@ -29,11 +28,15 @@ function InfoPage({ id, type}) {
       let type = filmInfo.type;
 
       getFilmInfo(id, type);
-      getSimilarMovies(id, type);
+
+      setTimeout(() => {
+        getSimilarMovies(id, type);
+      }, 2000);
     }
   }, [id, type]);
 
   async function getFilmInfo(id, type) {
+    console.log("type", type);
     try {
       let response;
 
@@ -68,6 +71,7 @@ function InfoPage({ id, type}) {
   return (
     <div className="info-page">
       <NavBar />
+
       <div className="info-page__banner">
         <img
           src={apiConfig.originalImage(movie.backdrop_path)}
@@ -76,13 +80,17 @@ function InfoPage({ id, type}) {
         />
         <div className="dark-shade"></div>
       </div>
+
       <MovieInfo movie={movie} />
+
       {movie.videos !== undefined ? <TrailerSection trailersArr={movie} /> : ""}
+
       <MoviesList
         contentArr={similarMovies}
-        title={type === 'movie' ? "Similar Movies" : "Similar Tv Series"}
-        contentType={type}
+        title={type === "movie" ? "Similar Movies" : "Similar Tv Series"}
+        contentType={type !== undefined ? type : 'tv'}
       />
+
     </div>
   );
 }

@@ -17,24 +17,29 @@ function Home() {
   async function getMovies() {
     try {
       const trendingMoviesRes = await axios.get(`${apiConfig.popularMovies}`);
-
       setTrendingMovies(trendingMoviesRes.data.results);
 
-      const upComingRes = await axios.get(`${apiConfig.upComingMovies}`);
+      setTimeout(async () => {
+        const upComingRes = await axios.get(`${apiConfig.upComingMovies}`);
+        setUpComing(upComingRes.data.results);
+      }, 1000)
 
-      setUpComing(upComingRes.data.results);
+      setTimeout(async() => {
+        const topRatedMoviesRes = await axios.get(apiConfig.topRatedMovies);
+        setTopRatedMovies(topRatedMoviesRes.data.results);
+      }, 2000)
 
-      const topRatedMoviesRes = await axios.get(apiConfig.topRatedMovies);
 
-      setTopRatedMovies(topRatedMoviesRes.data.results);
+      setTimeout(async() => {
+        const popularTvRes = await axios.get(apiConfig.popularTv);
+        setpopularTv(popularTvRes.data.results);
+      }, 3000)
 
-      const popularTvRes = await axios.get(apiConfig.popularTv);
+      setTimeout(async () => {
+        const topTvRes = await axios.get(apiConfig.topRatedTv);
+        setTopTv(topTvRes.data.results);
+      }, 3500);
 
-      setpopularTv(popularTvRes.data.results);
-
-      const topTvRes = await axios.get(apiConfig.topRatedTv);
-
-      setTopTv(topTvRes.data.results);
     } catch (error) {
       console.error(error);
     }

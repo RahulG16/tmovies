@@ -16,6 +16,8 @@ function MoviesList({ contentArr, title, contentType }) {
     filmCtx.setType(type);
   }
 
+  // content.media_type;
+
   return (
     <div className="content-container">
       <h1 className="category-title">{title}</h1>
@@ -23,23 +25,23 @@ function MoviesList({ contentArr, title, contentType }) {
         {contentArr.map((content, i) => {
           return (
             <Link
-              to={`/${content.media_type || contentType}/${content.id}`}
+              to={`/${contentType}/${content.id}`}
               className={"content-link"}
               key={i}
             >
               <div className="content">
                 <img
                   src={apiConfig.originalImage(content.poster_path)}
-                  alt=""
+                  alt="poster-img"
                   className="content-poster"
                   data-id={content.id}
-                  data-type={content.media_type || contentType}
+                  data-type={contentType}
                   onClick={(e) => clickHandler(e)}
                 />
                 <h3
                   className="content-name"
                   data-id={content.id}
-                  data-type={content.media_type || contentType}
+                  data-type={contentType}
                   onClick={(e) => clickHandler(e)}
                 >
                   {content.name || content.original_name || content.title}

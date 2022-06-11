@@ -28,13 +28,18 @@
   margin: 0px;
 }
 
-@media screen and (max-width: 519px) {
+@media screen and (max-width: 674px) {
   .movieinfo{
-    width: 90%;
+    width: 98vw;
+  }
+
+  .movieinfo > .simple-card {
+    display: none;
   }
 
   .movieinfo-content {
     width: 100%;
+    position: absolute;
   }
 
   .badge-container {
@@ -46,6 +51,6 @@
 
 @media screen and (max-width: 889px) {
   .movieinfo {
-    width: 95vw;
+    width: 78vw;
   }
 }

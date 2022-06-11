@@ -1,6 +1,7 @@
 import React from "react";
 import "./Cast.css";
 import apiConfig from "../../../Api/APIConfig";
+import Placeholder from '../../../Assets/placeholder.png'
 
 function Cast({ cast }) {
   
@@ -14,7 +15,7 @@ function Cast({ cast }) {
           return (
             <div className="profile" key={i}>
               <img
-                src={`${apiConfig.originalImage(person.profile_path)}`}
+                src={person.profile_path ? `${apiConfig.originalImage(person.profile_path)}` : Placeholder}
                 alt=""
               />
               <p>{person.original_name}</p>
