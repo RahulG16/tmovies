@@ -1,5 +1,6 @@
 .App {
   height: 95vh;
+  overflow-x: hidden;
   position: relative;
 }
 

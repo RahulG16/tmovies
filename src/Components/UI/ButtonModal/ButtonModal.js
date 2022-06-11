@@ -26,7 +26,8 @@ const btnStyle = {
   color: "white",
   fontWeight: "bold",
   textTransform: "capitalize",
-  padding: "10px 20px"
+  padding: "8px 25px",
+  minWidth: "140px",
 };
 
 export default function ButtonModal({ BtnName, data_id, data_type }) {
@@ -94,8 +95,7 @@ export default function ButtonModal({ BtnName, data_id, data_type }) {
             src={`https://www.youtube.com/embed/${link}`}
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; encrypted-media; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </Box>
       </Modal>

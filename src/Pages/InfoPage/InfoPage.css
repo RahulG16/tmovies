@@ -1,22 +1,19 @@
 .info-page__img {
-  /* border: 5px solid green; */
-  object-fit: contain;
+  object-fit: cover;
   width: 100vw;
+  height: 100%;
   position: absolute;
   top: -30px;
 }
 
 .info-page {
-  /* border: 1px solid green; */
   width: 100vw;
-  /* height: 100vh; */
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* background-color: black */
 }
 
 .info-page__banner {
@@ -28,7 +25,6 @@
 }
 
 .dark-shade {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.699);

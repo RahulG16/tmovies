@@ -17,11 +17,7 @@ function Banner() {
       );
 
       let resultArr = response.data.results;
-
-      // console.log(response.data.results);
-
         resultArr.length = 8
-        
       setTrendingMovies(resultArr);
     } catch (error) {
       console.error(error);

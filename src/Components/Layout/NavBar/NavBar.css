@@ -1,13 +1,18 @@
 .navbar {
   background-color: rgba(0, 0, 0, 0.594);
   color: white;
-  padding: 0px 85px;
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.navbar-contents {
+  width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +34,12 @@
 .link {
   color: white;
   text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.link:hover {
+  border-bottom: 4px solid white;
+  border-radius: 4px;
 }
 
 .logo {

@@ -1,26 +1,47 @@
 .trailer-container {
-    /* border: 2px solid green; */
-    width: 75vw;
-    position: relative;
-    height: auto;
-    top: 95vh;
-    margin-bottom: 600px;
+  width: 90vw;
+  position: relative;
+  height: auto;
+  top: 95vh;
+  margin-bottom: 600px;
 }
 
 .yt-video {
-    width: 100%;
-    color: white;
-    margin: 5% 0;
-    /* border: 1px solid red; */
-    font-weight: bold;
+  width: 100%;
+  color: white;
+  margin: 5% 0;
+  font-weight: bold;
 }
 
 .responsive-iframe {
-    width: 100%;
-    min-height: 80vh;
-    left: 0;
-    right: 0;
-    /* margin: 50px; */
-    position: relative;
-    /* border: 2px solid rgb(3, 139, 57); */
+  width: 100%;
+  height: fit-content;
+  min-height: 80vh;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .trailer-container {
+    margin-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .trailer-container {
+    margin-top: 80vh;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .trailer-container {
+    margin-top: 60vh;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .trailer-container {
+    margin-top: 30vh;
+  }
 }

@@ -1,16 +1,15 @@
 .banner {
-  width: 80%;
+  width: 85%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   z-index: 1;
 }
 
 .banner-layout {
   width: 100%;
-  height: 96vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
 
@@ -30,18 +29,18 @@
 }
 
 .banner-text {
-  width: 70%;
+  width: 60%;
   color: white;
+  font-size: 1rem;
   font-weight: bold;
   text-align: justify;
-  /* border: 1px solid saddlebrown; */
 }
 
 .poster-img {
   z-index: -20;
   width: 100%;
-  object-fit: contain;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
   position: absolute;
 }
 
@@ -55,7 +54,7 @@
 }
 
 .banner-content {
-  height: 100%;
+  padding: 7vw 0;
   min-width: 100vw;
   position: relative;
   top: 0px;
@@ -67,9 +66,24 @@
 }
 
 .action-btns {
-  width: 50%;
+  width: 80%;
+  min-width: 310px;
   margin-top: 22px;
   display: flex;
   justify-content: space-around;
-  /* border: 1px solid brown; */
+  align-items: center;
+}
+
+@media screen and (max-width: 518px) {
+  .simple-card {
+    display: none;
+  }
+
+  .banner-text {
+    width: 98%;
+  } 
+
+  .action-btns {
+    width: 98%;
+  }
 }

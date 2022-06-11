@@ -2,6 +2,8 @@
     padding: 12px 30px;
     border-radius: 25px;
     border: none;
+    min-width: 142px;
+    /* margin-bottom: 15px; */
     background-color: red;
     color: white;
     font-weight: bold;

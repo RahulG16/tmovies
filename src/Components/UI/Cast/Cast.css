@@ -8,10 +8,20 @@
     margin: 0px;
 }
 
+.profile {
+    width: 120px;
+    height: 180px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .cast-block {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid wheat; */
 }
 
 .cast-block > h2 {

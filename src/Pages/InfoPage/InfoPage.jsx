@@ -80,7 +80,7 @@ function InfoPage({ id, type}) {
       {movie.videos !== undefined ? <TrailerSection trailersArr={movie} /> : ""}
       <MoviesList
         contentArr={similarMovies}
-        title={"Similar Movies"}
+        title={type === 'movie' ? "Similar Movies" : "Similar Tv Series"}
         contentType={type}
       />
     </div>

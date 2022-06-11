@@ -1,13 +1,18 @@
 .card {
-    /* border: 1px solid red; */
-    max-width: 20vw;
-    min-width: 14vw;
+    width: 220px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 6%;
+    margin-right: 4%;
+    text-align: justify;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-link {
@@ -20,10 +25,10 @@
     font-size: 18px;
     margin: 4px 0px;
     font-weight: bold;
+    text-justify: center;
 }
 
 .card-img {
-    min-width: 12vw;
-    max-width: 18vw;
+    width: 220px;
     border-radius: 15px;
 }
